@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "paths": {
+      "@/framework/contracts/foundation/http": [
+        "libs/framework/src/lib/contracts/foundation/http/index.ts"
+      ],
+      "@/framework/contracts/foundation": [
+        "libs/framework/src/lib/contracts/foundation/index.ts"
+      ],
+      "@/framework/contracts/support": [
+        "libs/framework/src/lib/contracts/support/index.ts"
+      ],
+      "@/framework/foundation/http": [
+        "libs/framework/src/lib/foundation/http/index.ts"
+      ],
+      "@/framework/foundation": ["libs/framework/src/lib/foundation/index.ts"],
+      "@/framework/support": ["libs/framework/src/lib/support/index.ts"]
+    }
+  },
+  "files": [],
+  "include": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ],
+  "exclude": ["node_modules", "tmp"]
+}
